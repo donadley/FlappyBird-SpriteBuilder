@@ -9,6 +9,9 @@
     // Create charcter and add it to the physics node
     character = (Character*)[CCBReader load:@"Character"];
     [physicsNode addChild:character];
+    
+    // Adding Obstacle
+    [self addObstacle];
 }
 
 -(void)update:(CCTime)delta
