@@ -21,6 +21,8 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
     Character*     character;
     // Node that hold the physics laws
     CCPhysicsNode* physicsNode;
+    // Time to spawn obstacle
+    float timeSinceObstacle;
 }
 
 -(void) initialize;
