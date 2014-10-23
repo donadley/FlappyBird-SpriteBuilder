@@ -17,7 +17,10 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
 
 @interface GamePlayScene : CCNode <CCPhysicsCollisionDelegate>
 {
-    // define variables here;
+    // The Flappy Bird Charcter
+    Character*     character;
+    // Node that hold the physics laws
+    CCPhysicsNode* physicsNode;
 }
 
 -(void) initialize;
